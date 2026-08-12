@@ -1,0 +1,299 @@
+===== Explicit2D_mpi with 1 processes =====
+=== 2D Explicit Heat Equation Solver (MPI) ===
+Running on 1 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000118977
+Number of time steps = 420
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00025180
+L2 error vs exact    = 0.00012308
+Elapsed time (s)     = 0.00318345
+
+===== Explicit2D_mpi with 2 processes =====
+=== 2D Explicit Heat Equation Solver (MPI) ===
+Running on 2 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000118977
+Number of time steps = 420
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00025180
+L2 error vs exact    = 0.00012308
+Elapsed time (s)     = 0.00257479
+
+===== Explicit2D_mpi with 4 processes =====
+=== 2D Explicit Heat Equation Solver (MPI) ===
+Running on 4 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000118977
+Number of time steps = 420
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00025180
+L2 error vs exact    = 0.00012308
+Elapsed time (s)     = 0.00234758
+
+===== Explicit2D_mpi with 8 processes =====
+=== 2D Explicit Heat Equation Solver (MPI) ===
+Running on 8 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000118977
+Number of time steps = 420
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00025180
+L2 error vs exact    = 0.00012308
+Elapsed time (s)     = 0.00198248
+
+===== Explicit3D_mpi with 1 processes =====
+=== 3D Explicit Heat Equation Solver (MPI) ===
+Running on 1 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.000340136
+Number of time steps = 58
+
+Simulated up to t    = 0.01972789
+Max error vs exact   = 0.00102838
+L2 error vs exact    = 0.00034194
+Elapsed time (s)     = 0.00206969
+
+===== Explicit3D_mpi with 2 processes =====
+=== 3D Explicit Heat Equation Solver (MPI) ===
+Running on 2 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.000340136
+Number of time steps = 58
+
+Simulated up to t    = 0.01972789
+Max error vs exact   = 0.00102838
+L2 error vs exact    = 0.00034194
+Elapsed time (s)     = 0.00124186
+
+===== Explicit3D_mpi with 4 processes =====
+=== 3D Explicit Heat Equation Solver (MPI) ===
+Running on 4 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.000340136
+Number of time steps = 58
+
+Simulated up to t    = 0.01972789
+Max error vs exact   = 0.00102838
+L2 error vs exact    = 0.00034194
+Elapsed time (s)     = 0.00096429
+
+===== Explicit3D_mpi with 8 processes =====
+=== 3D Explicit Heat Equation Solver (MPI) ===
+Running on 8 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.000340136
+Number of time steps = 58
+
+Simulated up to t    = 0.01972789
+Max error vs exact   = 0.00102838
+L2 error vs exact    = 0.00034194
+Elapsed time (s)     = 0.00082086
+
+===== Implicit2D_mpi with 1 processes =====
+=== 2D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 1 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000594884
+Number of time steps = 84
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00232465
+L2 error vs exact    = 0.00113632
+Elapsed time (s)     = 0.06324470
+
+===== Implicit2D_mpi with 2 processes =====
+=== 2D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 2 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000594884
+Number of time steps = 84
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00232465
+L2 error vs exact    = 0.00113632
+Elapsed time (s)     = 0.04669683
+
+===== Implicit2D_mpi with 4 processes =====
+=== 2D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 4 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000594884
+Number of time steps = 84
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00232465
+L2 error vs exact    = 0.00113632
+Elapsed time (s)     = 0.05996988
+
+===== Implicit2D_mpi with 8 processes =====
+=== 2D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 8 process(es)
+Grid spacing h       = 0.0243902
+Time step dt         = 0.000594884
+Number of time steps = 84
+
+Simulated up to t    = 0.04997026
+Max error vs exact   = 0.00232465
+L2 error vs exact    = 0.00113632
+Elapsed time (s)     = 0.09751646
+
+===== Implicit3D_mpi with 1 processes =====
+=== 3D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 1 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.00226757
+Number of time steps = 8
+
+Simulated up to t    = 0.01814059
+Max error vs exact   = 0.01064464
+L2 error vs exact    = 0.00353940
+Elapsed time (s)     = 0.03481874
+
+===== Implicit3D_mpi with 2 processes =====
+=== 3D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 2 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.00226757
+Number of time steps = 8
+
+Simulated up to t    = 0.01814059
+Max error vs exact   = 0.01064464
+L2 error vs exact    = 0.00353940
+Elapsed time (s)     = 0.02102053
+
+===== Implicit3D_mpi with 4 processes =====
+=== 3D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 4 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.00226757
+Number of time steps = 8
+
+Simulated up to t    = 0.01814059
+Max error vs exact   = 0.01064464
+L2 error vs exact    = 0.00353940
+Elapsed time (s)     = 0.01858234
+
+===== Implicit3D_mpi with 8 processes =====
+=== 3D Implicit Heat Equation Solver (MPI, Backward Euler + Jacobi) ===
+Running on 8 process(es)
+Grid spacing h       = 0.047619
+Time step dt         = 0.00226757
+Number of time steps = 8
+
+Simulated up to t    = 0.01814059
+Max error vs exact   = 0.01064464
+L2 error vs exact    = 0.00353940
+Elapsed time (s)     = 0.02242332
+
+
+
+###############################################################################
+TCHPC Cluster: seagull
+Job 47241 (heat_scaling) for User 'srajendr' in Account 'mschpc'
+Finished at: Mon Aug 10 19:13:59 IST 2026
+
+Job efficiency estimates:
+=========================
+
+Job ID: 47241
+Cluster: seagull
+User/Group: srajendr/srajendr
+State: RUNNING
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:00:00 core-walltime
+Job Wall-clock time: 00:00:00
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 61.52 GB (61.52 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.
+
+Job completion status:
+======================
+
+JobID           JobName AllocCPUS NTasks NNodes     MaxRSS    MaxRSSNode  MaxDiskRead MaxDiskWrite    Elapsed      State ExitCode 
+------------ ---------- --------- ------ ------ ---------- ------------- ------------ ------------ ---------- ---------- -------- 
+47241        heat_scal+         8             1                                                      00:00:00    RUNNING      0:0 
+47241.batch       batch         8      1      1     58124K  seagull-n017            0        0.00M   00:00:03  COMPLETED      0:0 
+47241.extern     extern         8      1      1                                                      00:00:00    RUNNING      0:0 
+
+
+Job details:
+============
+
+JobId=47241 JobName=heat_scaling
+   SLUID=sD89KZPDT2SW00
+   UserId=srajendr(2223) GroupId=srajendr(2155) MCS_label=N/A
+   Priority=603775 Nice=0 Account=mschpc QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=00:00:03 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2026-08-10T19:08:20 EligibleTime=2026-08-10T19:08:20
+   AccrueTime=2026-08-10T19:08:20
+   StartTime=2026-08-10T19:13:56 EndTime=2026-08-10T19:13:59 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-08-10T19:13:56 Scheduler=Main
+   Partition=compute AllocNode:Sid=seagull01:3422018
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=seagull-n017
+   BatchHost=seagull-n017
+   NumNodes=1 NumCPUs=8 NumTasks=8 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=8,mem=63000M,node=1,billing=8
+   AllocTRES=cpu=8,mem=63000M,node=1,billing=8
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   JOB_GRES=(null)
+     Nodes=seagull-n017 CPU_IDs=0-3,8-11 Mem=63000 GRES=
+   MinCPUsNode=1 MinMemoryNode=63000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/home/users/mschpc/2025/srajendr/dissertation/job.sh
+   SubmitLine=sbatch job.sh
+   WorkDir=/home/users/mschpc/2025/srajendr/dissertation
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/home/users/mschpc/2025/srajendr/dissertation/heat_scaling_47241.out
+
+
+SLURM Bank Statement:
+=====================
+
+User           Usage |        Account     Usage | Account Limit Available (CPU hrs)
+---------- --------- + -------------- --------- + ------------- ---------
+ashech             0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+cheny35           10 |         MSCHPC    71,190 |     2,810,000 2,738,810
+chojnace           1 |         MSCHPC    71,190 |     2,810,000 2,738,810
+czhang4        5,329 |         MSCHPC    71,190 |     2,810,000 2,738,810
+ecurry        46,674 |         MSCHPC    71,190 |     2,810,000 2,738,810
+fugu               0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+killalel      13,403 |         MSCHPC    71,190 |     2,810,000 2,738,810
+knightsk           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+lanem2         5,599 |         MSCHPC    71,190 |     2,810,000 2,738,810
+mcleodco           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+mli7               0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+ofarrepa           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+prasannp           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+sheriddy           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+srajendr           0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+szhang2            0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+vacariem          15 |         MSCHPC    71,190 |     2,810,000 2,738,810
+xiangyu          153 |         MSCHPC    71,190 |     2,810,000 2,738,810
+xniu               6 |         MSCHPC    71,190 |     2,810,000 2,738,810
+yangmi             0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+yaoco              0 |         MSCHPC    71,190 |     2,810,000 2,738,810
+
+
+Acknowledgements:
+=================
+
+Note that usage of TCHPC Resources *must* be acknowledged in all publications.
+
+Please see this page for details relevant to this cluster:
+
+http://www.tchpc.tcd.ie/resources/acknowledgementpolicy
+
+################################################################################
