@@ -1,15 +1,4 @@
 // Implicit3D.cpp
-//
-// Sequential 3D heat equation solver using the Implicit (Backward Euler) scheme,
-// with the resulting linear system solved by Jacobi iteration at every time step.
-// Direct 3D extension of heat2d_implicit.cpp -- same idea, one more dimension.
-//
-// Solves:   du/dt = alpha * (d2u/dx2 + d2u/dy2 + d2u/dz2)   on the unit cube [0,1]^3
-// with homogeneous Dirichlet boundary conditions (u = 0 on all six faces).
-//
-// Verified against the same 3D exact manufactured solution used for heat3d_explicit.cpp:
-//
-//     u_exact(x,y,z,t) = sin(pi*x) * sin(pi*y) * sin(pi*z) * exp(-3 * alpha * pi^2 * t)
 
 #include <iostream>
 #include <vector>
@@ -32,8 +21,6 @@ int main() {
     const double h       = L / (N + 1);
     const double t_final = 0.02;
 
-    // No stability limit for implicit -- pick a time step well above the explicit
-    // 3D limit of r <= 1/6, to demonstrate the same advantage shown in 2D.
     const double r         = 1.0;
     const double dt         = r * h * h / alpha;
     const int    num_steps  = static_cast<int>(t_final / dt);
@@ -64,7 +51,6 @@ int main() {
                 u[i][j][k] = exact_solution(x, y, z, 0.0, alpha);
             }
 
-    // ---------------- Time-stepping loop ----------------
     for (int step = 0; step < num_steps; ++step) {
         u_old = u;   // this step's fixed starting values
         u_new = u;   // Jacobi's first guess

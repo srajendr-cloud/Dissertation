@@ -1,18 +1,4 @@
 // Explicit3D.cpp
-//
-// Sequential 3D heat equation solver using the Explicit (Forward Euler / FTCS) scheme.
-// This is the direct 3D extension of heat2d_explicit.cpp -- same idea, one more dimension.
-//
-// Solves:   du/dt = alpha * (d2u/dx2 + d2u/dy2 + d2u/dz2)   on the unit cube [0,1]^3
-// with homogeneous Dirichlet boundary conditions (u = 0 on all six faces).
-//
-// Verified against the exact manufactured solution:
-//
-//     u_exact(x,y,z,t) = sin(pi*x) * sin(pi*y) * sin(pi*z) * exp(-3 * alpha * pi^2 * t)
-//
-// Note the exponent here is -3*alpha*pi^2*t (one pi^2 term per dimension), compared
-// to -2*alpha*pi^2*t in the 2D version -- this is the direct mathematical reason heat
-// diffuses away faster, in relative terms, as you add spatial dimensions.
 
 #include <iostream>
 #include <vector>
@@ -36,11 +22,6 @@ int main() {
     const double h       = L / (N + 1);
     const double t_final = 0.02;
 
-    // Stability condition for 3D explicit FTCS: r = alpha*dt/h^2 must be <= 1/6.
-    // This is TIGHTER than the 2D limit of 1/4 -- one extra neighbour direction
-    // means less "safety margin" per step, so 3D forces smaller time steps for the
-    // same spatial resolution. This is a genuinely important, reportable difference
-    // between 2D and 3D scaling, independent of how many grid points you use.
     const double r        = 0.15;
     const double dt        = r * h * h / alpha;
     const int    num_steps = static_cast<int>(t_final / dt);
@@ -67,7 +48,6 @@ int main() {
             }
     u_new = u; // boundary faces start at 0, exactly as in the 2D version
 
-    // ---------------- Time-stepping loop ----------------
     for (int step = 0; step < num_steps; ++step) {
         for (int i = 1; i <= N; ++i)
             for (int j = 1; j <= N; ++j)

@@ -1,23 +1,4 @@
 // Implicit2D.cpp
-//
-// Sequential 2D heat equation solver using the Implicit (Backward Euler) scheme,
-// with the resulting linear system solved by Jacobi iteration at every time step.
-//
-// Solves:   du/dt = alpha * (d2u/dx2 + d2u/dy2)   on the unit square [0,1] x [0,1]
-// with homogeneous Dirichlet boundary conditions (u = 0 on all four edges).
-//
-// Verified against the SAME exact manufactured solution used for the explicit version,
-// so the two files can be compared directly:
-//
-//     u_exact(x, y, t) = sin(pi*x) * sin(pi*y) * exp(-2 * alpha * pi^2 * t)
-//
-// The key difference from the explicit version: here, the new value at every point
-// depends on the NEW values of its neighbours too (not just the old ones). That means
-// we cannot just plug numbers into one formula -- we have to solve a whole system of
-// equations at every time step. Jacobi iteration does this by guessing, checking,
-// and improving the guess, repeatedly, until it stops changing -- the same idea as
-// the "two rooms heating each other" example: guess a value, use it to update the
-// neighbours, then use the neighbours' updated values to correct the guess, and repeat.
 
 #include <iostream>
 #include <vector>
@@ -39,8 +20,6 @@ int main() {
     const double h        = L / (N + 1);
     const double t_final  = 0.05;
 
-    // Implicit scheme has NO stability limit on r -- that is the whole point of it.
-    // We can pick a much bigger time step than the explicit scheme was allowed to use.
     const double r         = 1.0;   // deliberately well above the explicit limit of 0.25
     const double dt         = r * h * h / alpha;
     const int    num_steps  = static_cast<int>(t_final / dt);
@@ -70,7 +49,6 @@ int main() {
         }
     }
 
-    // ---------------- Time-stepping loop ----------------
     for (int step = 0; step < num_steps; ++step) {
         // u_old holds this step's STARTING values -- these stay fixed while Jacobi runs.
         u_old = u;
